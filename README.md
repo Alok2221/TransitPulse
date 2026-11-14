@@ -31,7 +31,7 @@ Narzędzie decyzyjne A→B: porównuje **samochód, pociąg, autobus i rower** p
 ```
 backend/      API REST (port 8080)
 frontend/     UI (port 5173)
-.cursor/      reguły Cursor (z na-czas, dostosowane)
+.cursor/      reguły Cursor
 AGENTS.md     opis konfiguracji agenta
 demo/         nagranie / zrzuty ekranu
 ```
@@ -70,15 +70,14 @@ UI: `http://localhost:5173`
 
 ## Demo
 
-Zrzuty ekranu w [`demo/`](demo/):
+Nagranie: [`demo/demo.mp4`](demo/demo.mp4)
+
+Zrzuty ekranu:
 
 ![Porównanie trasy](demo/01-compare.png)
 ![TransitPulse AI](demo/02-ai.png)
 
-Pełne nagranie `.gif` / `.mp4` możesz dodać według [`demo/README.md`](demo/README.md).
-
 ## Jak wspierałem się narzędziami AI
 
 - **Cursor** — scaffold monorepo, warstwy Spring Boot, UI React, integracje OSRM/Open-Meteo, refaktor copy i parsera NL.
-- Reguły z projektu **na-czas** (`.cursor/rules/` + `AGENTS.md`) przeniesione i dostosowane do TransitPulse.
 - W produkcie **nie** ma zewnętrznego LLM — agent to lokalna heurystyka, żeby MVP działało bez klucza API.
