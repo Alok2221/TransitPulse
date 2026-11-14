@@ -76,7 +76,9 @@ UI: `http://localhost:5173`
 
 Jeśli odtwarzacz się nie pojawi, otwórz plik bezpośrednio: [demo/demo.mp4](demo/demo.mp4).
 
-Zrzut ekranu — ranking:
+Zrzuty ekranu:
+
+![Interfejs TransitPulse](demo/00-ui.png)
 
 ![Ranking Katowice → Kraków](demo/01-ranking.png)
 
