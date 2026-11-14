@@ -70,7 +70,11 @@ UI: `http://localhost:5173`
 
 ## Demo
 
-Nagranie: [`demo/demo.mp4`](demo/demo.mp4)
+<video src="demo/demo.mp4" controls width="720" poster="demo/01-ranking.png">
+  <a href="demo/demo.mp4">Obejrzyj nagranie (demo.mp4)</a>
+</video>
+
+Jeśli odtwarzacz się nie pojawi, otwórz plik bezpośrednio: [demo/demo.mp4](demo/demo.mp4).
 
 Zrzut ekranu — ranking:
 
