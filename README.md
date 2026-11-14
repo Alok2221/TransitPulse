@@ -72,10 +72,9 @@ UI: `http://localhost:5173`
 
 Nagranie: [`demo/demo.mp4`](demo/demo.mp4)
 
-Zrzuty ekranu:
+Zrzut ekranu — ranking:
 
-![Porównanie trasy](demo/01-compare.png)
-![TransitPulse AI](demo/02-ai.png)
+![Ranking Katowice → Kraków](demo/01-ranking.png)
 
 ## Jak wspierałem się narzędziami AI
 
