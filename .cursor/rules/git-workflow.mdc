@@ -1,0 +1,22 @@
+---
+description: Zasady pracy z gałęziami — co agent może zrobić sam, a co tylko na wyraźną prośbę
+alwaysApply: true
+---
+
+# Gałęzie: granica samodzielności
+
+## Nigdy bez wyraźnej prośby
+
+- `git merge` do `develop` ani do `main` / `master`
+- `git push` na `origin` (jakakolwiek gałąź)
+- `git tag`
+- przepisywanie historii: `git reset --hard`, `git rebase`, `git push --force`
+
+Gdy praca na gałęzi funkcji jest gotowa, **zatrzymaj się i zapytaj**, zamiast scalać.
+Napisz, co jest gotowe i że czekasz na decyzję o scaleniu.
+
+## Wolno bez pytania
+
+- założyć gałąź `feature/<krotki-opis>` odbitą od `main` / `master` / `develop`
+- commitować lokalnie na tej gałęzi (gdy użytkownik o to prosi)
+- czytać historię: `git log`, `git diff`, `git status`

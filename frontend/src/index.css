@@ -1,0 +1,53 @@
+:root {
+  --ink: #10231f;
+  --ink-soft: #3a524c;
+  --paper: #f3f7f4;
+  --mist: #d7e6df;
+  --sea: #0f6b5c;
+  --sea-deep: #0a433a;
+  --pulse: #e08a2c;
+  --pulse-soft: #f3c48a;
+  --line: rgba(16, 35, 31, 0.12);
+  --danger: #a33b2b;
+  --ok: #1f7a4c;
+  --shadow: 0 18px 50px rgba(10, 40, 34, 0.12);
+  --radius: 18px;
+  --font-display: 'Instrument Serif', Georgia, serif;
+  --font-body: 'DM Sans', 'Segoe UI', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-body);
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(224, 138, 44, 0.18), transparent 55%),
+    radial-gradient(900px 500px at 100% 0%, rgba(15, 107, 92, 0.16), transparent 50%),
+    linear-gradient(180deg, #eef5f1 0%, var(--paper) 42%, #e7f0eb 100%);
+  background-attachment: fixed;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}

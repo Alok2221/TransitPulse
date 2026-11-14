@@ -1,0 +1,34 @@
+---
+description: Nazewnictwo gałęzi i format commitów w projekcie TransitPulse
+alwaysApply: true
+---
+
+# Konwencje gałęzi i commitów
+
+Wzorzec bierz z historii repozytorium (`git log`), nie z ogólnych zwyczajów.
+
+## Nazwy gałęzi
+
+`feature/<krotki-opis>` — małe litery, łączniki, po polsku ale **bez znaków
+diakrytycznych**. Pilna poprawka to `hotfix/<opis>` odbita od `main`.
+
+```
+feature/porownanie-tras
+feature/agent-ai
+feature/historia-tripow
+```
+
+## Commity
+
+Temat to zdanie po polsku z **pełnymi znakami diakrytycznymi** i cudzysłowami „”.
+Bez prefiksów `feat:` / `fix:` / `docs:`.
+
+Po pustej linii akapit prozą: co się zmieniło i **dlaczego**, a nie lista punktów.
+Na końcu stopka `Co-Authored-By` z agentem, który współtworzył zmianę — tylko gdy masz pewność.
+
+```
+Silnik porównania: ranking kosztów, czasu i CO₂
+
+Użytkownik musi zobaczyć spójny ranking czterech środków transportu,
+żeby podjąć decyzję A→B bez zewnętrznych rozkładów.
+```

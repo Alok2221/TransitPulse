@@ -1,0 +1,35 @@
+---
+description: Stack i konwencje TransitPulse (backend / frontend / API)
+alwaysApply: true
+---
+
+# TransitPulse — stack
+
+## Układ
+
+- `backend/` — Java 17+, Spring Boot 3, Spring Data JPA, SQLite
+- `frontend/` — React + Vite + TypeScript (port 5173)
+- API na `http://localhost:8080`, CORS tylko dla frontendu
+
+## Warstwy backendu
+
+`controller` → `service` → `repository` / `domain`. DTO w `dto`.
+Nie mieszaj logiki scoringu w kontrolerach.
+
+## Frontend
+
+Komunikacja wyłącznie przez REST (`/api/...`). Trzymaj typy odpowiedzi API
+w jednym module. Brand **TransitPulse** ma być sygnałem hero, nie tylko w nav.
+
+## Dane zewnętrzne (bez kluczy)
+
+- Open-Meteo Geocoding — dowolne miasta + autocomplete `/api/cities/search`
+- OSRM — dystans/czas drogi; fallback: haversine×1.3 / seed / default
+- Open-Meteo — pogoda; fallback: `MockWeatherService`
+- Paliwo: średnia z `application.properties` (bez scrapingu stacji)
+- Bilety PKP/bus: model km (bez scrapingu Koleo)
+
+## AI
+
+Agent to lokalny parser NL — **bez klucza LLM**.
+Nie dodawaj OpenAI/Claude ani scrapingu bez wyraźnej prośby.

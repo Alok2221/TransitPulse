@@ -1,0 +1,24 @@
+# Backend
+backend/target/
+backend/*.db
+backend/*.db-journal
+*.class
+*.jar
+*.war
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# IDE / OS
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
+
+# Env
+.env
+.env.local
